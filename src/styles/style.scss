@@ -3,23 +3,70 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
-// $purple: #8A4D76;
-// $pink: #FA7C91;
-// $brown: #757763;
-// $beige-light: #D0D1CD;
-// $beige-lighter: #EFF0EB;
-
+$persian_gn: #00A896;
+$green: #02C39A;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #575756;
+$beige-lighter: #EFF0EB;
 // Update Bulma's global variables
-// $family-sans-serif: "Nunito", sans-serif;
-// $grey-dark: $brown;
-// $grey-light: $beige-light;
-// $primary: $purple;
-// $link: $pink;
-// $widescreen-enabled: false;
-// $fullhd-enabled: false;
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$primary: $persian_gn;
+$link: $green;
 $input-focus-box-shadow-color: none;
 
 @import "~bulma/bulma";
+
+body {
+    background-color: #e6e6e6;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us {
+    margin: 5em 2.5em 5em;
+     .title {
+         font-weight: 300;
+         color: $beige-light;
+         margin-bottom: 2em;
+     }
+     .read-more {
+         display: inline-block;
+         margin-top: 2.5em;
+     }
+}
+
+.articles-section {
+    margin-bottom: 10em;
+    .title {
+        font-weight: 300;
+        color: $beige-light;
+        margin-bottom: 2em;
+    }
+    .media-content {
+        a {
+            color: $beige-light;
+            &:hover {
+                color: $persian_gn;
+            }
+        }
+    }
+}
+
+.green-hover {
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+    &:hover {
+        transform: translateY(-5px);
+        border: none;
+        border-bottom: 5px solid $persian_gn;
+    }
+}
 
 .footer-content-color {
     a {
