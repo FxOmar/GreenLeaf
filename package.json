@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "heroku-postbuild": "webpack -p",
     "start": "webpack-dev-server --open",
-    "build": "webpack",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
