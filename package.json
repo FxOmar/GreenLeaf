@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack",
     "dev": "node server.js",
     "heroku-postbuild": "webpack -p" 
   },
