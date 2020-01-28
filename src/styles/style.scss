@@ -21,3 +21,12 @@ $input-focus-box-shadow-color: none;
 
 @import "~bulma/bulma";
 
+.footer-content-color {
+    a {
+        color: $grey;
+        margin-right: 1em;
+        &:hover {
+            color: $dark;
+        }
+    }
+}

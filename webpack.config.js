@@ -35,7 +35,7 @@ module.exports = {
 		}),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/mystyles.css'
+            filename: 'css/styles.css'
         })
 	],
 	devServer: {
