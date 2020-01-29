@@ -1,0 +1,14 @@
+.top-navbar {
+	.level-right {
+		.level-item {
+			a {
+				color: white;
+				margin-right: 1.5em;
+
+				&:hover {
+					color: $persian_gn;
+				}
+			}
+		}
+	}
+}

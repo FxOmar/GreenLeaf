@@ -10,101 +10,71 @@ $brown: #757763;
 $beige-light: #575756;
 $beige-lighter: #EFF0EB;
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "Nunito",
+sans-serif;
 $primary: $persian_gn;
 $link: $green;
 $input-focus-box-shadow-color: none;
-
 @import "~bulma/bulma";
+@import "./post.scss";
+@import "./navbar.scss";
+@import "./center.scss";
+@import "./arrowButton.scss";
+@import "./aboutSection.scss";
+@import "./overlayBg.scss";
 
 body {
-    background-color: #e6e6e6;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-us {
-    // margin: 5em 2.5em 5em;
-    padding: 2em;
-     .title {
-         font-weight: 300;
-         color: $beige-light;
-         margin-bottom: 2em;
-     }
-
-     .sb::before {
-        content: "";
-        background-color: $green;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 1.5em;
-        right: 1.5em;
-        z-index: 1;
-    }
-
-     .read-more {
-         display: inline-block;
-         margin-top: 2.5em;
-     }
+	background-color: #e6e6e6;
 }
 
 .articles-section {
-    margin-top: 5em;
-    margin-bottom: 5em;
-    .title {
-        font-weight: 300;
-        color: $beige-light;
-        margin-bottom: 1em;
-    }
-    .media-content {
-        a {
-            color: $beige-light;
-            &:hover {
-                color: $persian_gn;
-            }
-        }
-    }
+	margin-top: 5em;
+	margin-bottom: 5em;
+
+	.title {
+		font-weight: 300;
+		color: $beige-light;
+		margin-bottom: 1em;
+	}
+
+	.media-content {
+		a {
+			color: $beige-light;
+
+			&:hover {
+				color: $persian_gn;
+			}
+		}
+	}
 }
 
 .sub-input {
-    box-shadow: none;
-    border: none; 
-    // border-bottom: 2px solid #4a4a4a; 
-    margin-bottom: 1em; 
-    width: 35em; 
-    align-self: center;
+	box-shadow: none;
+	border: none;
+	// border-bottom: 2px solid #4a4a4a; 
+	margin-bottom: 1em;
+	width: 35em;
+	align-self: center;
 }
 
 .green-hover {
-    transition: all 0.25s ease-in;
-    border-bottom: 5px solid transparent;
-    &:hover {
-        transform: translateY(-5px);
-        border: none;
-        border-bottom: 5px solid $persian_gn;
-    }
-}
+	transition: all 0.25s ease-in;
+	border-bottom: 5px solid transparent;
 
-.overlay::before {
-    content: "";
-    background: $persian_gn;
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+	&:hover {
+		transform: translateY(-5px);
+		border: none;
+		border-bottom: 5px solid $persian_gn;
+	}
 }
 
 .footer-content-color {
-    a {
-        color: $grey;
-        margin-right: 1em;
-        &:hover {
-            color: $dark;
-        }
-    }
+	a {
+		color: $grey;
+		margin-right: 1em;
+
+		&:hover {
+			color: $dark;
+		}
+	}
 }

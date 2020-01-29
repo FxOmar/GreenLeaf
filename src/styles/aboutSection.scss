@@ -1,0 +1,26 @@
+.about-us {
+	// margin: 5em 2.5em 5em;
+	padding: 2em;
+
+	.title {
+		font-weight: 300;
+		color: $beige-light;
+		margin-bottom: 2em;
+	}
+
+	.sb::before {
+		content: "";
+		background-color: $green;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 1.5em;
+		right: 1.5em;
+		z-index: 1;
+	}
+
+	.read-more {
+		display: inline-block;
+		margin-top: 2.5em;
+	}
+}

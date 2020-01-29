@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const {
+	CleanWebpackPlugin
+} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 
@@ -29,12 +31,17 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Home page',
+            title: 'Home page',
 			template: './src/homepage.html'
-		}),
-        new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({
-            filename: 'css/styles.css'
-        })
+        }),
+        new HtmlWebpackPlugin({
+            title: 'article page',
+            filename: 'post.html',
+            template: './src/post.html'
+        }),
+		new CleanWebpackPlugin(),
+		new MiniCssExtractPlugin({
+			filename: 'css/styles.css'
+		})
 	]
 }
