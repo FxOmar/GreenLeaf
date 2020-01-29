@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 
 module.exports = {
-	mode: 'development',
 	entry: './src/js/index.js',
 	output: {
 		filename: 'main.[contentHash].js',
@@ -37,10 +36,5 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'css/styles.css'
         })
-	],
-	devServer: {
-		contentBase: path.join(__dirname, 'dist'),
-		compress: true,
-		port: 9000
-	}
+	]
 }
