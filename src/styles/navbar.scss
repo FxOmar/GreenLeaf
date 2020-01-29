@@ -4,9 +4,16 @@
 			a {
 				color: white;
 				margin-right: 1.5em;
-
+				
 				&:hover {
 					color: $persian_gn;
+				}
+			}
+		}
+		.level-item:last-child {
+			a {
+				&:hover {
+					color: white;
 				}
 			}
 		}
